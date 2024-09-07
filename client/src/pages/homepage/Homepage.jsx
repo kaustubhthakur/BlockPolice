@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import { ethers } from "ethers";
-import "./HomePage.css"; // Import the CSS file
+import "./Homepage.css"; // Import the CSS file
 import ComplaintModal from "../../components/complaintmodal/ComplaintModal";
 const contractAddress = "0x3725dccf810180db9915abc9bcf939bb2cda1324";
 const contractABI = [
