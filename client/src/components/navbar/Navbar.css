@@ -1,0 +1,121 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #222;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+ 
+  .navbar-logo .logo {
+    height: 50px;
+    width: auto;
+  }
+  .logo{
+    border-radius: 300px;
+    height: 150px;
+    border:1px solid red ;
+  }
+  .navbar-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-buttons .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none; /* Ensures the Link component looks like a button */
+    text-align: center;
+  }
+  
+  .navbar-buttons .btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+  }
+  
+  .navbar-buttons .btn-disconnect {
+    background-color: #f44336;
+  }
+  
+  .navbar-buttons .btn-disconnect:hover {
+    background-color: #e53935;
+  }
+  
+  .wallet-address {
+    margin-right: 15px;
+    font-size: 15px;
+    color: #f0f0f0;
+  }
+  
+  /* Media Query for Tablets */
+  @media (max-width: 1024px) {
+    .navbar {
+      padding: 15px 20px;
+    }
+  
+    .navbar-buttons .btn {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    .wallet-address {
+      font-size: 14px;
+    }
+  }
+  
+  /* Media Query for Small Screens (Smartphones) */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    .navbar-logo .logo {
+      height: 40px;
+      margin-bottom: 15px;
+    }
+  
+    .navbar-buttons {
+      flex-direction: column;
+      width: 99%;
+      align-items: flex-start;
+    }
+  
+    .navbar-buttons .wallet-address {
+      margin-bottom: 10px;
+    }
+  
+    .navbar-buttons .btn {
+      width: 100%;
+      margin: 8px 0;
+      padding: 12px;
+    }
+  }
+  
+  /* Media Query for Extra Small Screens */
+  @media (max-width: 480px) {
+    .navbar-logo .logo {
+      height: 35px;
+    }
+  
+    .navbar-buttons .btn {
+      font-size: 13px;
+      padding: 10px;
+    }
+  
+    .wallet-address {
+      font-size: 13px;
+    }
+  }
+  
